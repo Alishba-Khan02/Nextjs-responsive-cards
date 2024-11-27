@@ -1,7 +1,7 @@
 import logo from "@/public/images/logo.png" 
 import Image from "next/image";
-// import Link from "next/link";
-//        
+import Link from "next/link";
+
 
 
 
@@ -42,9 +42,12 @@ export default function Header(){
 
         <div className="lg:flex flex-col lg:flex-row lg:space-x-9 lg:mt-0 mt-4 flex flex-col items-center text-xl">
             <a href="/" className="text-white  px-4 py-2 hover:text-orange-600 ">Home</a>
-            <a href="#Product" className="text-white  px-4 py-2  hover:text-orange-600">Product</a>
-            <a href="#About us" className="text-white  px-4 py-2  hover:text-orange-600">About Us</a>
-            <a href="Contact Us" className="text-white  px-4 py-2  hover:text-orange-600">Contact Us</a>
+            < Link href={"/Product"} className="text-white  px-4 py-2  hover:text-orange-600">Product</Link>
+            
+                    
+              
+            <Link  href= {"/About-us"} className="text-white  px-4 py-2  hover:text-orange-600">About Us</Link>
+            < Link href={"/contact-us"} className="text-white  px-4 py-2  hover:text-orange-600">Contact Us</Link>
         </div>
     </div>
 
